@@ -1,7 +1,7 @@
 *{
     padding:0;
     margin:0;
-    color:#eee;
+    color: greenyellow;
     text-align: center;
 }
 
@@ -25,4 +25,11 @@ nav, section, footer, article, aside{
 
 article, aside{
     width: 40%;
+    display: inline-block;
+    height: 300px;
+    background-color: rgb(70,70,70);
+}
+
+nav, section, footer{
+    background-color: rgb(100,100,100);
 }
