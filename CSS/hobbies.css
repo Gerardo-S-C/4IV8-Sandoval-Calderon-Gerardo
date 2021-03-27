@@ -1,0 +1,78 @@
+@keyframes cambio_color{
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: lightgrey;
+    }
+}
+*{
+    padding:0;
+    margin:0;
+    color: whitesmoke;
+    text-align: center;
+}
+
+html,body{  
+    animation-name: cambio_color;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: url(../maxresdefault.jpg) no-repeat center center fixed;
+    background-size:contain ;
+}
+h1{
+    font: caption;
+    font-size: 5rem;
+}
+.flex-container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.verde{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 1000;
+    font-size-adjust: initial;
+    font-size: 2rem;
+}
+.aside1{
+    display: flex;
+    justify-content: flex-start;
+    float:right;
+    color: rgb(0, 70, 221);
+    font-size: 30px;
+}
+.article1{
+    display: flex;
+    float: inline-start;
+}
+.texto{
+    color: rgb(180, 10, 10);
+    font-size: 30px;
+}
+.texto-alt{
+    color: rgb(10, 13, 180);
+    font-size: 30px;
+}
+.main{
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+.mania_buttons{
+    margin-left: auto;
+    margin-right: auto;
+    transform:scale(1);
+    transition: all 50ms ease-in-out;    
+}      
+.mania_buttons:hover{
+    transform:scale(0.8);
+} 
+.video {
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+}
