@@ -25,6 +25,11 @@ html,body{
 h1{
     font: caption;
     font-size: 5rem;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
 }
 .flex-container {
     height: 150px;
@@ -32,7 +37,7 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.verde{
+.patas{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 1000;
@@ -45,9 +50,11 @@ h1{
     float:right;
     color: rgb(0, 70, 221);
     font-size: 30px;
+    padding-left: 7rem;
 }
 .article1{
     display: flex;
+    padding-right: 6rem;
     float: inline-start;
 }
 .texto{
@@ -75,4 +82,6 @@ h1{
     box-sizing: border-box;
     width: 50%;
     height: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
