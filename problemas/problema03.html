@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 3</title>
+    <link rel="stylesheet" href="../CSS/problemas.css">
+    <script src="../JS/problemasJS/problema03.js"></script>
+</head>
+<body>
+    <p class="instruction">
+        Una tienda ofrece un descuento del 15% sobre el total de la compra y un cliente
+        desea saber cuando debera pagar finalmente por su compra.
+    </p>
+    <form method="post" name="formulario">
+        <div class="datagrid">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><div id="no-paging">&nbsp;</div>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Introduce el precio inicial: $ </td>
+                        <td><input type="text" name="cantidad" onkeypress="return validarn(event)"></td>
+                    </tr>
+                <tr class="alt">
+                    <td></td>
+                    <td><input  class="purple"  type="button" 
+                        value="descuento" name="enviar" onclick="descuento()"></td>
+                </tr>
+                <tr>
+                    <td class="td_sup">El total con el descuento es de:</td>
+                    <td><input type="text" name="sueldoti" id="cantidadi" readonly="readonly"
+                        class="input_text"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <br>
+    <h1><a href="../problemas_java.html">Regresar al menú</a></h1>
+</body>
+</html>

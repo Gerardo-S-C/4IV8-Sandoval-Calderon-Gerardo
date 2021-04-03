@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 8</title>
+    <link rel="stylesheet" href="../CSS/problemas.css">
+    <script src="../JS/problemasJS/problema08.js"></script>
+</head>
+<body>
+    <p class="instruction">
+        Leer tres numeros diferentes e imprimir el numero mayor de los tres
+    </p>
+    <form method="GET" name="formulario" 
+    onsubmit="return validar(this)" action="formulario.html" >
+        <div class="datagrid">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><div id="no-paging">&nbsp;</div>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Ingrese 3 numeros para realizar la comparacion</td>
+                        <td>
+                            <input type="text" name="num1" id="num"onkeypress="return validarn(event)">
+                        </td>
+                        <td>
+                            <input type="text" name="num2" id="num" onkeypress="return validarn(event)">
+                        </td>
+                        <td>
+                            <input type="text" name="num3" id="num" onkeypress="return validarn(event)">
+                        </td>
+                    </tr>
+                <tr class="alt">
+                    <td>El número mayor es:</td>
+                    <td>
+                        <input  class="purple" type="text" name="final" id="fin" readonly="readonly">
+                    </td>
+                    <td>
+                        <input  class="purple" type="button" value="Calcular" name="enviar" onclick="operaciones()"> 
+                    </td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <h1><a href="../problemas_java.html">Regresar al menú</a></h1>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 5</title>
+    <link rel="stylesheet" href="../CSS/problemas.css">
+    <script src="../JS/problemasJS/problema05.js"></script>
+</head>
+<body>
+    <p class="instruction">
+        Un maestro desea saber que porcentaje de hombres y que porcentaje de mujeres
+        hay en un grupo de estudiantes
+    </p>
+    <form method="GET" name="formulario" 
+    onsubmit="return validar(this)" action="formulario.html" >
+        <div class="datagrid">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número de alumnos hombres</th>
+                        <th>Número de alumnas mujeres</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><div id="no-paging">&nbsp;</div>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="hombres" name="Ho" onkeypress="return validarn(event)"></td>
+                        <td><input type="text" id="mujeres" name="Mu" onkeypress="return validarn(event)"></td>
+                    </tr>
+                <tr class="alt">
+                    <td>Alumnos hombres</td>
+                    <td><input  class="purple" type="text" name="FH" id="finalh" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td>Alumnas mujeres</td>
+                    <td><input type="text" name="FM" id="finalm" readonly="readonly"></td>
+                </tr>
+                <tr class="alt">
+                    <td><input  class="purple" type="button" value="Calcular" name="enviar" onclick="alumnos()" ></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <h1><a href="../problemas_java.html">Regresar al menú</a></h1>
+</body>
+</html>

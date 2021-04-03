@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 9</title>
+    <link rel="stylesheet" href="../CSS/problemas.css">
+    <script src="../JS/problemasJS/problema09.js"></script>
+</head>
+<body>
+    <p class="instruction">
+        Determinar la cantidad de dinero que recibira un trabajador por concepto 
+        de las horas extras trabajadas en una empresa, sabiendo que cuando las horas 
+        de trabajo exceden de 40, el resto se consideran horas extra y que estas se pagan 
+        al doble de una hora normal cuando no exceden de 8; si las horas extras exceden 
+        de 8 se pagan las primeras 8 al doble de lo que se pagan las horas normales y el 
+        resto se triplique.
+    </p>
+    <p class="instruction">
+        Sueldo base: $500 c/hora
+    </p>
+    <form method="GET" name="formulario" 
+    onsubmit="return validar(this)" action="formulario.html" >
+        <div class="datagrid">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><div id="no-paging">&nbsp;</div>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Ingrese las horas trabajadas: </td>
+                        <td>
+                            <input type="text" name="chambear" id="num" onkeypress="return validarn(event)">
+                        </td>
+                    </tr>
+                <tr class="alt">
+                    <td>Total: $</td>
+                    <td>
+                        <input class="purple"  type="text" name="final" id="fin" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Calcular" name="enviar" onclick="chamba()">
+                    </td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <h1><a href="../problemas_java.html">Regresar al menú</a></h1>
+</body>
+</html>

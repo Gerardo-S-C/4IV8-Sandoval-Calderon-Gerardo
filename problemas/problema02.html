@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2</title>
+    <link rel="stylesheet" href="../CSS/problemas.css">
+    <script src="../JS/problemasJS/problema2.js"></script>
+</head>
+<body>
+    <p class="instruction">
+        Un vendedor recibe un sueldo base mas un 10% extra por comision de
+        sus ventas, el vendedor desea saber cuanto dinero obtendra por concepto
+        de comisiones por las tres ventas que realiza en el mes y el total que
+        recibira en el mes tomando en cuenta su sueldo base y comisiones.
+    </p>
+    <form method="post" name="formulario">
+        <div class="datagrid">
+            <table align="center">
+                <thead>
+                    <tr>
+                        <th>Mes</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><div id="no-paging">&nbsp;</div>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text" id="num1" onchange="sumar(this.value);" onkeypress="return validarn(event)"></td>
+                        <td><p id="Producto1"></p></td>
+                    </tr>
+                <tr class="alt">
+                    <td>2</td>
+                    <td><input class="purple"  type="text" id="num2" onchange="sumar(this.value);" onkeypress="return validarn(event)"></td>
+                    <td><p class="purple"  id="Producto2"></p></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="text" id="num3" onchange="sumar(this.value);" onkeypress="return validarn(event)"></td>
+                    <td><p id="Producto3"></p></td>
+                </tr>
+                <tr class="alt">
+                    <td>Total</td>
+                    <td><p  class="purple" id="spTotal"></p></td>
+                    <td  class="purple" ></td>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <br>
+    <h1><a href="../problemas_java.html">Regresar al menú</a></h1>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 6</title>
+    <link rel="stylesheet" href="../CSS/problemas.css">
+    <script src="../JS/problemasJS/problema06.js"></script>
+</head>
+<body>
+    <p class="instruction">
+        Realizar un algoritmo que calcule la edad de una persona
+    </p>
+    <form method="GET" name="formulario" 
+    onsubmit="return validar(this)" action="formulario.html" >
+        <div class="datagrid">
+            <table>
+                <thead>
+                    <tr>
+                        <th>header</th>
+                        <th>header</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><div id="no-paging">&nbsp;</div>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Ingrese la fecha de nacimiento para calcular: </td>
+                        <td>
+                            <input type="date" name="cumples" id="cumple">
+                        </td>
+                    </tr>
+                <tr class="alt">
+                    <td>Su edad es: </td>
+                    <td>
+                        <input class="purple"  type="text" name="final" id="fin" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Calcular" name="enviar" onclick="calcularEdad()" ></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <h1><a href="../problemas_java.html">Regresar al menú</a></h1>
+</body>
+</html>

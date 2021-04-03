@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+    <link rel="stylesheet" href="../CSS/problemas.css">
+    <script src="../JS/problemasJS/problema04.js"></script>
+</head>
+<body>
+    <p class="instruction">
+        Un alumno desea saber cual sera su calificacion final en la materia de 
+        Algoritmos. dicha calificacion se compone de los siguientes parciales:
+        <br>
+        55% del promedio de sus tres calificaciones parciales
+        <br>
+        30% de la calificacion del examen final
+        <br>
+        15% de la calificacion del trabajo final
+    </p>
+    <form method="post" name="formulario">
+        <div class="datagrid">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Calificaciones</th>
+                        <th>Examen</th>
+                        <th>Trabajo final</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><div id="no-paging">&nbsp;</div>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Primer parcial</td>
+                        <td><input type="text" id="calificacion1" name="num1" onkeypress="return validarn(event)"></td>
+                        <td><input type="text" id="examen" name="examen"onkeypress="return validarn(event)"></td>
+                        <td><input type="text" name="texto" id="TFinal" onkeypress="return validarn(event)"></td>
+                    </tr>
+                <tr class="alt">
+                    <td>Segundo parcial</td>
+                    <td><input  class="purple" type="text" id="calificacion2" name="num2" onkeypress="return validarn(event)"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tercer parcial</td>
+                    <td><input type="text" id="calificacion3" name="num3"" onkeypress="return validarn(event)"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="alt">
+                    <td>Final</td>
+                    <td><input  class="purple" type="text" name="final" id="final" readonly="readonly"></td>
+                    <td><input  class="purple" type="button" value="Calcular" name="enviar" onclick="promedios()" ></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <br>
+    <h1><a href="../problemas_java.html">Regresar al menú</a></h1>
+</body>
+</html>

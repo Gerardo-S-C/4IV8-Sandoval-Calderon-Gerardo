@@ -7,7 +7,7 @@ function validar(formulario){
         formulario.nombre.focus();  //posicionar el cursor dentro del elemento
     return false;
     }
-
+    //validar que solo sean letras
     var checkOk="QWERTYUIOPASDFGHJKLZXCVBNM"+"qwertyuiopasdfghjklzxcvbnm";
 
     var checkStr= formulario.nombre.value;

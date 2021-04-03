@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 01</title>
+    <link rel="stylesheet" href="../CSS/problemas.css">
+    <script src="../JS/problemasJS/problema01.js"></script>
+</head>
+<body>
+    <p class="instruction">
+        Suponga que un individuo desea invertir su capital en un banco y
+        desea saber cuanto dinero ganara despues de un mes si el banco paga
+        a razon de 2% mensual.
+    </p>
+    <form method="post" name="formulario">
+        <div class="datagrid">
+            <table align="center">
+                <thead>
+                    <tr>
+                        <th colspan="2"></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><div id="no-paging">&nbsp;</div>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Introduce la cantidad a invertir: $ </td>
+                        <td><input type="text" name="cantidad" onkeypress="return validarn(event)"></td>
+                    </tr>
+                <tr class="alt">
+                    <td></td>
+                    <td><input type="button" 
+                        value="interes" name="enviar" onclick="interes()"></td>
+                </tr>
+                <tr>
+                    <td>Su saldo total con interes al 2% es:</td>
+                    <td><input type="text" name="sueldoti" id="cantidadi" readonly="readonly"
+                        class="input_text"></td>
+                </tr>
+                <tr class="alt">
+                    <td></td>
+                    <td> <input type="button" value="Borrar" 
+                        name="reset" onclick="borrar()" > </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <br>
+    <h1><a href="../problemas_java.html">Regresar al menú</a></h1>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 10</title>
+    <link rel="stylesheet" href="../CSS/problemas.css">
+    <script src="../JS/problemasJS/problema10.js"></script>
+</head>
+<body>
+    <p class="instruction">
+        Calcular la utilidad que un trabajador recibe en el reparto anual de 
+        utilidades si este se le asigna como un porcentaje de su salario mensual 
+        que depende de su antiguedad en la empresa de acuerdo con la sig. tabla:
+    </p>
+    <p class="instruction">Mensualidad= $20,000</p>
+    <form method="GET" name="formulario" 
+    onsubmit="return validar(this)" action="formulario.html" >
+        <div class="datagrid">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><div id="no-paging">&nbsp;</div>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Ingrese sus años laborando en la empresa: </td>
+                        <td>
+                            <input type="text" name="utilidad" id="num" onkeypress="return validarn(event)">
+                        </td>
+                    </tr>
+                <tr class="alt">
+                    <td>Su utilidad es del:</td>
+                    <td>
+                        <input  class="purple" type="text" name="final" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Calcular" name="enviar" onclick="utilidadF()">
+                    </td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <br><br>
+    <table>
+        <tr>
+            <td>Tiempo</td>
+            <td>Utilidad</td>
+        </tr>
+        <tr>
+            <td>Menos de 1 año</td>
+            <td>5% del salario</td>
+        </tr>
+        <tr>
+            <td>1 año o mas y menos de 2 años</td>
+            <td>7% del salario</td>
+        </tr>
+        <tr>
+            <td>2 años o mas y menos de 5 años</td>
+            <td>10% del salario</td>
+        </tr>
+        <tr>
+            <td>5 años o mas y menos de 10 años</td>
+            <td>15% del salario</td>
+        </tr>
+        <tr>
+            <td>10 años o mas</td>
+            <td>20% del salario</td>
+        </tr>
+    </table>
+    <h1><a href="../problemas_java.html">Regresar al menú</a></h1>
+</body>
+</html>
