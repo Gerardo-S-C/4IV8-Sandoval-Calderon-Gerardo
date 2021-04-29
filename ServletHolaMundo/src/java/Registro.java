@@ -48,7 +48,7 @@ public class Registro extends HttpServlet {
         //driver:gestor:puerto//IP/nombreBD
         
         String userName = "root";
-        String password = "n0m3l0";
+        String password = "illuminova";
         
         try{
             //colocamos el tipo de driver
@@ -103,11 +103,15 @@ public class Registro extends HttpServlet {
             puerto = request.getLocalPort();
             
             iph = request.getRemoteAddr();
-            puertoh = request.getRemotePort();                      
+            puertoh = request.getRemotePort();
+            
+            
             /*
-            Una vez que tengamos los datos vamos a insertarlos en la bd            
+            Una vez que tengamos los datos vamos a insertarlos en la bd
+            
             insert into nombre_tabla (definicion_atributo, definicion_atributo, ...)
-            values ("valores_cadena", valores_numericos, ....);            
+            values ("valores_cadena", valores_numericos, ....);
+            
             */
             
             try{
@@ -120,7 +124,9 @@ public class Registro extends HttpServlet {
                 set.executeUpdate(q);
                 
                 System.out.println("Registro exitoso");
-
+            
+            
+            
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -149,8 +155,10 @@ public class Registro extends HttpServlet {
                     + "<br>"
                     + "<a href='Consultar'>Consultar Tabla General de Usuarios</a>");
             out.println("</body>");
-            out.println("</html>");            
-            }catch(Exception e){                
+            out.println("</html>");
+            
+            }catch(Exception e){
+                
                 out.println("<!DOCTYPE html>");
                 out.println("<html>");
                 out.println("<head>");
@@ -164,10 +172,12 @@ public class Registro extends HttpServlet {
                 
                 System.out.println("No se registro en la tabla");
                 System.out.println(e.getMessage());
-                System.out.println(e.getStackTrace());      
+                System.out.println(e.getStackTrace());
+            
             }
         }
     }
+
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -220,4 +230,5 @@ public class Registro extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
 }
