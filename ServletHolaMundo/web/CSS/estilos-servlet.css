@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29/04/2021, 11:31:57 PM
+    Author     : illum
+*/
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+html, body{
+    background-color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font: caption;
+    font-size: 5rem;
+    text-align: center;
+}
+
+label{
+    padding: 5px;
+    border: 5px;
+}
+input{
+    margin: 3px;
+}
+table{
+    font: normal 20px/150% Arial, Helvetica, sans-serif; background: #fff; 
+    overflow: hidden; 
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    padding: 11px 7px;     
+    border-collapse: collapse; 
+    text-align: center; 
+    width: 100%;
+    border-color:crimson; 
+    font-size: large ;
+}
+a{
+    text-align: center;
+    font-size: 3rem;
+}
+.video {
+    box-sizing: border-box;
+    height: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+.center{
+    display: flex;
+    justify-content: space-around;
+
+}
+.consulta{
+    display: flex;
+}
+.containerRegistro, .containerEliminar, .containerActualizar, .containerConsulta{
+    display: flex;
+    border-left: solid rgb(69, 69, 218);
+    border-right: solid rgb(69, 69, 218);
+    border-spacing: 4px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}

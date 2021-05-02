@@ -27,10 +27,6 @@ nos ayuda para las querrys, o las consultas a la bd
 import java.sql.ResultSet;
 import javax.servlet.ServletConfig;
 
-/**
- *
- * @author demon
- */
 public class Registro extends HttpServlet {
     //variables globales
     
@@ -130,7 +126,9 @@ public class Registro extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Registro</title>");            
+            out.println("<title>Servlet Registro</title>"
+                    + "<link rel=\"stylesheet\" href=\"./CSS/estilos-servlet.css\">\n" +
+"        <script src=\"./JS/servlet-js.js\"></script>");            
             out.println("</head>");
             out.println("<body>"
                     + "Tu nombre es: " + nom);

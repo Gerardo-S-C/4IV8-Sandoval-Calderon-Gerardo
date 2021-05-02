@@ -27,11 +27,6 @@ nos ayuda para las querrys, o las consultas a la bd
 import java.sql.ResultSet;
 import javax.servlet.ServletConfig;
 
-
-/**
- *
- * @author demon
- */
 public class Consultar extends HttpServlet {
 
     /**
@@ -109,7 +104,9 @@ public class Consultar extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Consultar</title>");            
+            out.println("<title>Servlet Consultar</title>"
+                    + "<link rel=\"stylesheet\" href=\"./CSS/estilos-servlet.css\">\n" +
+"        <script src=\"./JS/servlet-js.js\"></script>");            
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Tabla General de Usuarios</h1>");
@@ -166,8 +163,7 @@ public class Consultar extends HttpServlet {
             
             out.println("<br>"
                     + "<a href='index.html'>Regresar a la pagina principal</a>"
-                    + "<br>"
-                    + "<a href='Registro'>Insertar nuevo Usuario</a>");
+                    + "<br>");
             out.println("</body>");
             out.println("</html>");
         }
