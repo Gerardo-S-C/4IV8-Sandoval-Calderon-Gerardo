@@ -110,7 +110,7 @@ public class Eliminar extends HttpServlet {
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+                        throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
@@ -131,13 +131,13 @@ public class Eliminar extends HttpServlet {
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet Eliminar</title>"
-                    + "<link rel=\"stylesheet\" href=\"./CSS/estilos-servlet.css\">\n" +
-"        <script src=\"./JS/servlet-js.js\"></script>");            
+            + "<link rel=\"stylesheet\" type=\"text/css\" href=\"./CSS/estilos-servlet.css\">\n");            
             out.println("</head>");
             out.println("<body>");
             
             
-            try{ 
+            try{
+                
                 set.executeUpdate(q);
                 System.out.println("Registro eliminado");
             out.println("<h1>Usuario Eliminado</h1>");
@@ -155,7 +155,7 @@ public class Eliminar extends HttpServlet {
             out.println("<br>"
                     + "<a href='index.html'>Regresar a la pagina principal</a>"
                     + "<br>"
-                    + "<a href='Registro'>Insertar nuevo Usuario</a>"
+                    + "<a href='index.html'>Insertar nuevo Usuario</a>"
                     + "<br>"
                     + "<a href='Consultar'>Consultar Tabla General de Usuarios</a>");
             out.println("</body>");
