@@ -131,8 +131,7 @@ public class Actualizar extends HttpServlet {
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet Actualizar</title>"
-                    + "<link rel=\"stylesheet\" type=\"text/css\" href=\"./CSS/estilos-servlet.css\">\n" +
-"        <script src=\"./JS/servlet-js.js\"></script>");            
+                    + "<link rel=\"stylesheet\" type=\"text/css\" href=\"./CSS/estilos-servlet.css\">\n");          
             out.println("</head>");
             out.println("<body>");
 
@@ -142,9 +141,6 @@ public class Actualizar extends HttpServlet {
                 + "edad_usu='"+edadnvo+"' where id_usu="+idnvo;   
                     
                     set.executeUpdate(q);
-
-                    rs.close();
-                    set.close();
                     out.println("<h1>Actualizar datos con exito</h1>");
                     out.println("</div>");
                         System.out.println("Actualizacion correcta");   
