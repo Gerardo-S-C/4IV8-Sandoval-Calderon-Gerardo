@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4/05/2021, 07:06:59 PM
+    Author     : illum
+*/
+@keyframes cambio_color{
+    from{
+        background-color: rgb(12, 29, 124);
+    }
+    to{
+        background-color: rgb(36, 56, 168);
+    }
+}
+html, body{
+    animation-name: cambio_color;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: white;
+}
+input{
+    margin: 10px;
+}
+table{
+    font: normal 20px/150% Arial, Helvetica, sans-serif;  
+    overflow: hidden; 
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 9px;
+    padding: 11px 7px;     
+    text-align: center; 
+    font-size: large ;
+    border: 2px;
+}
+
+a{
+    color: white;
+    font-size: xx-large;
+}
+.titulo{
+    display: flex;
+    justify-content: space-around;
+    font-size: 5em;
+    background-color: rgba(131, 211, 11, 0.384);
+    border-radius: 20px;
+}
+.Helado{
+    display: flex;   
+    justify-content: space-evenly;
+}
+.carrito{
+    font-size: 25px;
+}
+.link_regreso{
+    display: flex;
+    justify-content: center;
+}
+.comprar{
+    display: flex;
+    justify-content: space-evenly;
+}
