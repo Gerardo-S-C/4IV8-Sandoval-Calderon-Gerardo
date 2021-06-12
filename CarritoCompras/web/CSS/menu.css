@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4/05/2021, 02:00:11 AM
+    Author     : crist
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	
+	/*Aquí es el diseño para el menpu de la página*/
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background: url(https://s1.1zoom.me/b5050/101/Ice_cream_Berry_559814_1366x768.jpg);
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+	}
+        .productos{
+            display: flex;
+        }

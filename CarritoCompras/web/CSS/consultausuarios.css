@@ -1,0 +1,188 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/06/2021, 12:44:20 AM
+    Author     : illum
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+html,body{
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+th{
+    padding: 1rem;
+    margin: 1rem;
+    background-image: linear-gradient(-225deg, #4f1c7e 0%, #442085 48%, #4d01a3 100%);
+    color: white;
+}
+td{
+    background-color: #909090;;
+}
+td,th{
+    padding: 10px;
+    border-radius: 5px;
+}
+.select {
+  border: 1px solid #ccc;
+  width: 140px;
+  overflow: hidden;
+  background: #fff url("arrowdown.gif") no-repeat 90% center;
+}
+  .select select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+  }
+.titulo{
+    padding: 10px;
+}
+.botones{
+    text-align: end;
+}
+.transferir-boton{
+    background-color: #037d96dc;
+    border: 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: double;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+.transferir-boton:hover{
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    background-color: white;
+    color: black;
+}
+.transferencias-boton1, .consultar{
+    background-color:#037d96dc;
+    border: 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: double;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+.botones-consulta{
+    text-align: center;
+}
+.transferencias-boton1:hover, .consultar:hover{
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    background-color: white;
+    color: black;
+}
+.transferencias-boton2{
+    background-color: rgb(23, 69, 156);
+    border: 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: double;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+.transferencias-boton2:hover{
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    background-color: white;
+    color: black;
+}
+.productos{
+    display: flex;
+    padding: 3rem;
+    margin: 1rem;
+    justify-content: space-evenly ;
+}
+.paciente-medico{
+    display: flex;
+    padding-right: 6rem;
+    float: inline-start;
+    padding: 1rem;
+    margin: 1rem;
+}
+.transferencias{
+    padding: 1rem;
+    margin: 1rem;
+}
+.box{
+    display: flex;
+    padding: 3rem;
+    margin: 1rem;
+    justify-content: space-evenly ;
+}
+.cerrarS{
+    background-color: rgb(35, 185, 129);
+    border: 1px;
+    color: white;
+    padding: 15px 48px;
+    text-align: center;
+    text-decoration: double;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+.cerrarS1{
+    background-color: rgb(158, 130, 199);
+    border: 1px;
+    color: black;
+    padding: 15px 48px;
+    text-align: center;
+    text-decoration: double;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+.cerrarS2{
+    background-color: rgb(60, 186, 207);
+    border: 1px;
+    color: white;
+    padding: 15px 48px;
+    text-align: center;
+    text-decoration: double;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}

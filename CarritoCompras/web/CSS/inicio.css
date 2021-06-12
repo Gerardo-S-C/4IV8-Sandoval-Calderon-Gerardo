@@ -1,0 +1,280 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1/05/2021, 06:06:14 PM
+    Author     : crist
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        td{
+            font-size: 15px;
+        }
+
+        body {
+                background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+
+            font-family: 'Vibur', cursive;
+        /*   the main font */
+            font-family: 'Abel', sans-serif;
+            opacity: .95;
+        /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+        }
+
+        .capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+form {
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+
+}
+/* form Container */
+form .con {
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+      margin: 0 auto;
+}
+
+/* the header form form */
+.head-form {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+/* Login title form form */
+.head-form h2 {
+    font-size: 250%;
+    font-family: 'Playfair Display', serif;
+    color: #3e403f;
+}
+/*  A welcome message or an explanation of the login form */
+.head-form p {letter-spacing: 0.05em;}
+
+.input-item {
+    background: #fff;
+    color: #333;
+    padding: 14.5px 0px 15px 9px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+/* Show/hide password Font Icon */
+#eye {
+    background: #fff;
+    color: #333;
+  
+    margin: 5.9px 0 0 0;
+    margin-left: -20px;
+    padding: 15px 9px 19px 0px;
+    border-radius: 0px 5px 5px 0px;
+  
+    float: right;
+    position: relative;
+    right: 1%;
+    top: -.2%;
+    z-index: 5;
+    
+    cursor: pointer;
+}
+/* inputs form  */
+input[class="form-input"]{
+    width: 250px;
+    height: 50px;
+  
+    margin-top: 2%;
+    padding: 15px;
+    
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+    
+}
+input[id="txt-input"] {width: 250px;}
+/* focus  */
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+/* input[type="text"] {min-width: 250px;} */
+/* buttons  */
+button {
+    display: inline-block;
+    color: #252537;
+  
+    width: 250px;
+    height: 50px;
+  
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 4% auto;
+    letter-spacing: 0.05em;
+    margin-right: 50%;
+}
+
+/* buttons hover Animation */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.overlay{
+    margin-top: 150px;
+}
+
+.registro{
+    margin-left: 70px;
+}
